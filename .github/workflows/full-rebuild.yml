@@ -1,0 +1,95 @@
+name: Full Rebuild Jazz Night Feed
+
+on:
+  # Manual trigger only - for full rebuilds
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for full rebuild'
+        required: false
+        default: 'Manual full rebuild'
+
+jobs:
+  full-rebuild:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium
+
+      - name: Create feeds directory
+        run: mkdir -p feeds
+
+      - name: Run full scrape
+        run: |
+          echo "Starting full scrape of Jazz Night archive..."
+          echo "This will take longer than incremental updates."
+          npm run build
+
+      - name: Verify feed creation
+        run: |
+          if [ -f "feeds/jazz-night-zune.xml" ]; then
+            echo "✅ Feed created successfully"
+            echo "📊 File size: $(du -h feeds/jazz-night-zune.xml | cut -f1)"
+            echo "📝 Episode count: $(grep -c '<item>' feeds/jazz-night-zune.xml || echo '0')"
+          else
+            echo "❌ Feed creation failed"
+            exit 1
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Add the new feed
+          git add feeds/jazz-night-zune.xml
+          
+          # Create commit with reason and timestamp
+          git commit -m "🔄 Full rebuild Jazz Night RSS feed: ${{ github.event.inputs.reason }} - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          
+          # Push changes
+          git push
+
+      - name: Upload feed artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jazz-night-feed-full-rebuild
+          path: feeds/jazz-night-zune.xml
+          retention-days: 90
+
+      - name: Summary
+        run: |
+          EPISODE_COUNT=$(grep -c '<item>' feeds/jazz-night-zune.xml || echo '0')
+          FILE_SIZE=$(du -h feeds/jazz-night-zune.xml | cut -f1)
+          
+          echo "## Jazz Night Feed Full Rebuild Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ **Full Rebuild Completed Successfully**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Statistics:**" >> $GITHUB_STEP_SUMMARY
+          echo "- Episodes scraped: ${EPISODE_COUNT}" >> $GITHUB_STEP_SUMMARY
+          echo "- Feed file size: ${FILE_SIZE}" >> $GITHUB_STEP_SUMMARY
+          echo "- Rebuild reason: ${{ github.event.inputs.reason }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Feed Location:** \`feeds/jazz-night-zune.xml\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Completed:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The feed has been committed to the repository and is ready for use." >> $GITHUB_STEP_SUMMARY

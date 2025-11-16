@@ -1,0 +1,115 @@
+name: Update Jazz Night Feed
+
+on:
+  # Run daily at 6 AM UTC (adjust timezone as needed)
+  schedule:
+    - cron: '0 6 * * *'
+  
+  # Allow manual triggering from GitHub UI
+  workflow_dispatch:
+
+  # Run on pushes to main branch (for testing)
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'src/update-jazz-night.mjs'
+      - '.github/workflows/update-feed.yml'
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Required to commit changes back to repo
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch full history to ensure we can commit
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium
+
+      - name: Check for existing feed
+        id: check-feed
+        run: |
+          if [ -f "feeds/jazz-night-zune.xml" ]; then
+            echo "feed-exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "feed-exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create initial feed (if none exists)
+        if: steps.check-feed.outputs.feed-exists == 'false'
+        run: |
+          echo "No existing feed found. Creating initial feed..."
+          npm run build
+
+      - name: Update feed with new episodes
+        run: |
+          echo "Checking for new episodes..."
+          npm run update
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if git diff --quiet feeds/jazz-night-zune.xml; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in feed"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Feed has been updated with new content"
+          fi
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Add the updated feed
+          git add feeds/jazz-night-zune.xml
+          
+          # Create commit with timestamp
+          git commit -m "🎵 Update Jazz Night RSS feed - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          
+          # Push changes
+          git push
+
+      - name: Upload feed artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jazz-night-feed
+          path: feeds/jazz-night-zune.xml
+          retention-days: 30
+
+      - name: Summary
+        run: |
+          echo "## Jazz Night Feed Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.check-changes.outputs.changes }}" = "true" ]; then
+            echo "✅ **Feed Updated Successfully**" >> $GITHUB_STEP_SUMMARY
+            echo "- New episodes were found and added to the RSS feed" >> $GITHUB_STEP_SUMMARY
+            echo "- Changes have been committed and pushed to the repository" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ **No Updates Required**" >> $GITHUB_STEP_SUMMARY
+            echo "- Feed is up to date with latest episodes" >> $GITHUB_STEP_SUMMARY
+            echo "- No changes were made" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Feed Location:** \`feeds/jazz-night-zune.xml\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Last Run:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY

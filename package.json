@@ -1,0 +1,15 @@
+{
+  "name": "jazz-night-zune-feed",
+  "version": "1.0.0",
+  "description": "Scrape NPR's Jazz Night In America series page and build a Zune-compatible RSS feed",
+  "type": "module",
+  "main": "src/scrape-jazz-night.mjs",
+  "scripts": {
+    "build": "node src/scrape-jazz-night.mjs",
+    "update": "node src/update-jazz-night.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0",
+    "xml2js": "^0.6.2"
+  }
+}
