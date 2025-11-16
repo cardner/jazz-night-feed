@@ -11,14 +11,17 @@
 import { writeFile } from "node:fs/promises";
 import { chromium } from "playwright";
 
-const SERIES_URL = "https://www.npr.org/series/347174538/jazz-night-radio";
-const OUTPUT_FILE = "feeds/jazz-night-zune.xml";
-const MAX_EPISODES = 100; // Upper limit for episodes to scrape
+// Configuration - can be overridden by environment variables or command line args
+const SERIES_URL = process.env.SERIES_URL || process.argv[2] || "https://www.npr.org/series/347174538/jazz-night-radio";
+const OUTPUT_FILE = process.env.OUTPUT_FILE || process.argv[3] || "feeds/jazz-night-zune.xml";
+const MAX_EPISODES = parseInt(process.env.MAX_EPISODES || process.argv[4] || "100", 10);
+const SELF_FEED_URL = process.env.SELF_FEED_URL || process.argv[5] || "https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml";
 
-// IMPORTANT: set this to the URL where this feed file
-// will be hosted (e.g. your GitHub Pages URL).
-const SELF_FEED_URL =
-  "https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml";
+console.log("Configuration:");
+console.log(`  SERIES_URL: ${SERIES_URL}`);
+console.log(`  OUTPUT_FILE: ${OUTPUT_FILE}`);
+console.log(`  MAX_EPISODES: ${MAX_EPISODES}`);
+console.log(`  SELF_FEED_URL: ${SELF_FEED_URL}`);
 
 // Channel metadata
 const FEED_TITLE = "Jazz Night In America: The Radio Program (Full Archive)";
@@ -46,11 +49,34 @@ function sanitizeDescription(desc = "") {
 }
 
 function parseDateToRss(dateText, fallback = new Date()) {
-  const d = new Date(dateText);
-  if (!Number.isNaN(d.getTime())) {
-    return d.toUTCString(); // RFC-1123 is fine for RSS/Zune
+  if (!dateText || dateText.trim() === "") {
+    console.log("No date text provided, using fallback");
+    return fallback.toUTCString();
   }
-  return fallback.toUTCString();
+  
+  // Try parsing the date directly first
+  let d = new Date(dateText);
+  
+  // If that fails, try some common transformations
+  if (Number.isNaN(d.getTime())) {
+    // Try converting slash dates to standard format
+    if (dateText.includes("/")) {
+      const parts = dateText.split("/");
+      if (parts.length === 3) {
+        // Assume MM/DD/YYYY format
+        const reformatted = `${parts[0]}/${parts[1]}/${parts[2]}`;
+        d = new Date(reformatted);
+      }
+    }
+  }
+  
+  if (!Number.isNaN(d.getTime())) {
+    console.log(`Parsed date: "${dateText}" → ${d.toUTCString()}`);
+    return d.toUTCString(); // RFC-1123 is fine for RSS/Zune
+  } else {
+    console.log(`Failed to parse date: "${dateText}", using fallback: ${fallback.toUTCString()}`);
+    return fallback.toUTCString();
+  }
 }
 
 function buildRss(episodes, channelImageUrl) {
@@ -140,7 +166,7 @@ async function gotoArchive(page) {
     console.log('Clicking "The Radio Show" link');
     await moreLink.first().click();
     await page.waitForLoadState("domcontentloaded");
-    await page.waitForTimeout(1500);
+    await page.waitForTimeout(2000); // Match debug script timing
   } else {
     console.log('No dedicated "The Radio Show" archive link found.');
   }
@@ -148,26 +174,42 @@ async function gotoArchive(page) {
 
 async function expandAllStories(page) {
   console.log(`Expanding stories via .options__load-more (up to ${MAX_EPISODES} episodes)…`);
+  
+  // Initial wait for page to fully load
+  console.log("Waiting for page to fully load...");
+  await page.waitForTimeout(3000);
+  
+  let clickCount = 0;
+  const maxClicks = 50; // Prevent infinite loops
+  let lastEpisodeCount = 0;
+  let noChangeCount = 0;
 
   while (true) {
-    await page.evaluate(() => {
-      window.scrollTo(0, document.body.scrollHeight);
-    });
-    await page.waitForTimeout(1200);
+    // Skip scrolling to match debug script behavior
+    // await page.evaluate(() => {
+    //   window.scrollTo(0, document.body.scrollHeight);
+    // });
+    // await page.waitForTimeout(1200);
 
-    // Check if we already have enough episodes
+    // Check current episode count before clicking
     const currentEpisodeCount = await page.evaluate(() => {
-      const anchors = Array.from(document.querySelectorAll("a"));
-      const downloadAnchors = anchors.filter((a) => {
-        const text = (a.textContent || "").trim();
-        const href = a.href || "";
-        return /Download/i.test(text) && href.includes("ondemand.npr.org");
-      });
-      return downloadAnchors.length;
+      const articleItems = Array.from(document.querySelectorAll("article.item"));
+      return articleItems.filter(article => {
+        const downloadLi = article.querySelector("li.audio-tool-download");
+        if (!downloadLi) return false;
+        const downloadAnchor = downloadLi.querySelector("a");
+        return downloadAnchor && downloadAnchor.href;
+      }).length;
     });
 
     if (currentEpisodeCount >= MAX_EPISODES) {
-      console.log(`Reached episode limit of ${MAX_EPISODES} — stopping.`);
+      console.log(`Reached episode limit of ${MAX_EPISODES} (found ${currentEpisodeCount}) — stopping.`);
+      break;
+    }
+
+    // Safety check for infinite loops
+    if (clickCount >= maxClicks) {
+      console.log(`Maximum click limit reached (${maxClicks}) — stopping to prevent infinite loop.`);
       break;
     }
 
@@ -175,18 +217,19 @@ async function expandAllStories(page) {
     const count = await loadMoreButton.count();
 
     if (count === 0) {
-      console.log('No ".options__load-more" button found — stopping.');
+      console.log(`No ".options__load-more" button found (${currentEpisodeCount} episodes found) — stopping.`);
       break;
     }
 
     const btn = loadMoreButton.first();
     const visible = await btn.isVisible().catch(() => false);
     if (!visible) {
-      console.log('".options__load-more" exists but isn’t visible — stopping.');
+      console.log(`".options__load-more" exists but isn't visible (${currentEpisodeCount} episodes found) — stopping.`);
       break;
     }
 
-    console.log('Clicking ".options__load-more"…');
+    clickCount++;
+    console.log(`Clicking ".options__load-more" (click ${clickCount}, ${currentEpisodeCount} episodes found so far)...`);
     try {
       await btn.click({ force: true });
     } catch (e) {
@@ -194,8 +237,48 @@ async function expandAllStories(page) {
       break;
     }
 
-    await page.waitForTimeout(2500);
+    // Wait 10 seconds for content to load after clicking
+    console.log("Waiting 10 seconds for new content to load...");
+    await page.waitForTimeout(10000);
+    
+    // Check episode count after waiting to see if new content loaded
+    const newEpisodeCount = await page.evaluate(() => {
+      const articleItems = Array.from(document.querySelectorAll("article.item"));
+      return articleItems.filter(article => {
+        const downloadLi = article.querySelector("li.audio-tool-download");
+        if (!downloadLi) return false;
+        const downloadAnchor = downloadLi.querySelector("a");
+        return downloadAnchor && downloadAnchor.href;
+      }).length;
+    });
+
+    // Check if episode count hasn't changed (indicates no more episodes loading)
+    if (newEpisodeCount === lastEpisodeCount) {
+      noChangeCount++;
+      console.log(`Episode count unchanged: ${newEpisodeCount} (attempt ${noChangeCount}/3)`);
+      if (noChangeCount >= 3) {
+        console.log(`Episode count unchanged after ${noChangeCount} attempts (${newEpisodeCount} episodes) — stopping.`);
+        break;
+      }
+    } else {
+      console.log(`Episode count increased: ${lastEpisodeCount} → ${newEpisodeCount} (+${newEpisodeCount - lastEpisodeCount})`);
+      noChangeCount = 0; // Reset counter if count changed
+    }
+    lastEpisodeCount = newEpisodeCount;
   }
+  
+  // Final count
+  const finalCount = await page.evaluate(() => {
+    const articleItems = Array.from(document.querySelectorAll("article.item"));
+    return articleItems.filter(article => {
+      const downloadLi = article.querySelector("li.audio-tool-download");
+      if (!downloadLi) return false;
+      const downloadAnchor = downloadLi.querySelector("a");
+      return downloadAnchor && downloadAnchor.href;
+    }).length;
+  });
+  
+  console.log(`Finished expanding. Final episode count: ${finalCount}`);
 }
 
 async function scrapeChannelImage(page) {
@@ -226,75 +309,85 @@ async function scrapeEpisodes(page) {
   console.log("Collecting episodes from page…");
 
   const episodes = await page.evaluate(() => {
-    const anchors = Array.from(document.querySelectorAll("a"));
-    const downloadAnchors = anchors.filter((a) => {
-      const text = (a.textContent || "").trim();
-      const href = a.href || "";
-      return /Download/i.test(text) && href.includes("ondemand.npr.org");
-    });
+    // The div[data-item-selector="article.item"] exists but doesn't contain the episodes
+    // Use direct search for article.item elements which works reliably
+    const articleItems = Array.from(document.querySelectorAll("article.item"));
 
     const results = [];
 
-    for (const a of downloadAnchors) {
-      const audioUrl = a.href;
-      if (!audioUrl) continue;
+    for (const article of articleItems) {
+      // Look for li.audio-tool-download within this article
+      const downloadLi = article.querySelector("li.audio-tool-download");
+      if (!downloadLi) continue;
 
-      let container =
-        a.closest("article") ||
-        a.closest("li") ||
-        a.closest("section") ||
-        a.closest("div");
-      if (!container) container = a.parentElement || document.body;
+      // Find the download link within the li element
+      const downloadAnchor = downloadLi.querySelector("a[href*='ondemand.npr.org']");
+      if (!downloadAnchor || !downloadAnchor.href) continue;
 
-      function findTitleAnchor(start) {
-        const MAX_DEPTH = 10;
-        let node = start;
-        let depth = 0;
+      const audioUrl = downloadAnchor.href;
 
-        while (node && depth < MAX_DEPTH) {
-          const candidates = Array.from(
-            node.querySelectorAll("a")
-          ).filter((el) => {
-            const href = el.href || "";
-            const text = (el.textContent || "").trim();
-            if (!text) return false;
-            if (href.includes("ondemand.npr.org")) return false;
-            if (href.includes("player/embed")) return false;
-            // NPR article URLs generally have a year in the path
-            if (!/\/20\d{2}\//.test(href)) return false;
-            return true;
-          });
+      // Find the title anchor within the article
+      // Look for links that go to NPR article pages (contain year in path)
+      const titleAnchor = Array.from(article.querySelectorAll("a")).find((el) => {
+        const href = el.href || "";
+        const text = (el.textContent || "").trim();
+        // Must have text, not be a download/embed link, and have year in path
+        return text && 
+               !href.includes("ondemand.npr.org") && 
+               !href.includes("player/embed") && 
+               /\/20\d{2}\//.test(href);
+      });
 
-          if (candidates.length > 0) {
-            const headingCandidate =
-              candidates.find((el) =>
-                /H[12]/i.test(el.parentElement?.tagName || "")
-              ) || candidates[0];
-            return headingCandidate;
-          }
-
-          node = node.parentElement;
-          depth++;
-        }
-
-        return null;
-      }
-
-      const titleAnchor = findTitleAnchor(container);
       const title = titleAnchor?.textContent?.trim() || "Untitled episode";
       const link = titleAnchor?.href || audioUrl;
 
-      let contextText = "";
-      if (titleAnchor && titleAnchor.parentElement) {
-        contextText = titleAnchor.parentElement.textContent || "";
-      } else {
-        contextText = container.textContent || "";
-      }
+      // Use the entire article as context for extracting information
+      const contextText = article.textContent || "";
 
-      const dateMatch = contextText.match(
-        /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}\b/
-      );
-      const dateText = dateMatch ? dateMatch[0] : "";
+      // Try multiple date extraction strategies
+      let dateText = "";
+      
+      // Strategy 1: Extract date from the audio URL (most reliable for NPR)
+      // NPR URLs often contain dates like: /2025/10/20251014_specials_...
+      const urlDateMatch = audioUrl.match(/\/(\d{4})\/\d{2}\/(\d{8})/);
+      if (urlDateMatch) {
+        const dateStr = urlDateMatch[2]; // e.g., "20251014"
+        if (dateStr.length === 8) {
+          const year = dateStr.substring(0, 4);
+          const month = dateStr.substring(4, 6);
+          const day = dateStr.substring(6, 8);
+          dateText = `${year}-${month}-${day}`;
+        }
+      }
+      
+      // Strategy 2: Look for full month name dates in context
+      if (!dateText) {
+        let dateMatch = contextText.match(
+          /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}\b/
+        );
+        
+        if (dateMatch) {
+          dateText = dateMatch[0];
+        } else {
+          // Strategy 3: Look for abbreviated month dates
+          dateMatch = contextText.match(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s+\d{4}\b/);
+          if (dateMatch) {
+            dateText = dateMatch[0];
+          } else {
+            // Strategy 4: Look for ISO-style dates
+            dateMatch = contextText.match(/\b\d{4}-\d{2}-\d{2}\b/);
+            if (dateMatch) {
+              dateText = dateMatch[0];
+            } else {
+              // Strategy 5: Look for slash dates
+              dateMatch = contextText.match(/\b\d{1,2}\/\d{1,2}\/\d{4}\b/);
+              if (dateMatch) {
+                dateText = dateMatch[0];
+              }
+            }
+          }
+        }
+      }
 
       let description = "";
       const bulletIndex = contextText.indexOf("•");
@@ -306,20 +399,29 @@ async function scrapeEpisodes(page) {
       }
 
       if (!description) {
+        // Look for description text in the article
         const blocks = Array.from(
-          container.querySelectorAll("p, span, div")
+          article.querySelectorAll("p, span, div")
         ).map((el) => (el.textContent || "").trim());
         for (const block of blocks) {
           if (
             block &&
             block.length > 40 &&
             !block.includes(title) &&
-            !block.includes("Listen ·")
+            !block.includes("Listen ·") &&
+            !block.includes("Download") &&
+            !block.includes("Embed")
           ) {
             description = block;
             break;
           }
         }
+      }
+
+      // Debug logging for date extraction issues only
+      if (!dateText && title) {
+        console.log(`No date found for episode: "${title.substring(0, 50)}..."`);
+        console.log(`Context text sample: "${contextText.substring(0, 200)}..."`);
       }
 
       results.push({
@@ -344,7 +446,7 @@ async function scrapeEpisodes(page) {
   // Apply episode limit here as well (in case we got more than expected)
   if (episodes.length > MAX_EPISODES) {
     console.log(`Limiting to ${MAX_EPISODES} most recent episodes.`);
-    episodes = episodes.slice(0, MAX_EPISODES);
+    return episodes.slice(0, MAX_EPISODES);
   }
   
   return episodes;

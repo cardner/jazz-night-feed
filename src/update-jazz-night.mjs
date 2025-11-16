@@ -41,11 +41,34 @@ function sanitizeDescription(desc = "") {
 }
 
 function parseDateToRss(dateText, fallback = new Date()) {
-  const d = new Date(dateText);
-  if (!Number.isNaN(d.getTime())) {
-    return d.toUTCString();
+  if (!dateText || dateText.trim() === "") {
+    console.log("No date text provided, using fallback");
+    return fallback.toUTCString();
   }
-  return fallback.toUTCString();
+  
+  // Try parsing the date directly first
+  let d = new Date(dateText);
+  
+  // If that fails, try some common transformations
+  if (Number.isNaN(d.getTime())) {
+    // Try converting slash dates to standard format
+    if (dateText.includes("/")) {
+      const parts = dateText.split("/");
+      if (parts.length === 3) {
+        // Assume MM/DD/YYYY format
+        const reformatted = `${parts[0]}/${parts[1]}/${parts[2]}`;
+        d = new Date(reformatted);
+      }
+    }
+  }
+  
+  if (!Number.isNaN(d.getTime())) {
+    console.log(`Parsed date: "${dateText}" → ${d.toUTCString()}`);
+    return d.toUTCString();
+  } else {
+    console.log(`Failed to parse date: "${dateText}", using fallback: ${fallback.toUTCString()}`);
+    return fallback.toUTCString();
+  }
 }
 
 async function checkFileExists(filePath) {
@@ -102,76 +125,86 @@ async function scrapeRecentEpisodes(page) {
 
   // Don't expand all - just get what's initially loaded
   const episodes = await page.evaluate((maxCheck) => {
-    const anchors = Array.from(document.querySelectorAll("a"));
-    const downloadAnchors = anchors.filter((a) => {
-      const text = (a.textContent || "").trim();
-      const href = a.href || "";
-      return /Download/i.test(text) && href.includes("ondemand.npr.org");
+    // Look for article elements with class "item" that contain download links
+    const articleItems = Array.from(document.querySelectorAll("article.item"));
+    
+    const validArticles = articleItems.filter(article => {
+      const downloadLi = article.querySelector("li.audio-tool-download");
+      if (!downloadLi) return false;
+      const downloadAnchor = downloadLi.querySelector("a[href*='ondemand.npr.org']");
+      return downloadAnchor && downloadAnchor.href;
     });
 
     // Only check the first maxCheck episodes
-    const episodesToCheck = downloadAnchors.slice(0, maxCheck);
+    const articlesToCheck = validArticles.slice(0, maxCheck);
     const results = [];
 
-    for (const a of episodesToCheck) {
-      const audioUrl = a.href;
-      if (!audioUrl) continue;
+    for (const article of articlesToCheck) {
+      const downloadLi = article.querySelector("li.audio-tool-download");
+      const downloadAnchor = downloadLi.querySelector("a[href*='ondemand.npr.org']");
+      const audioUrl = downloadAnchor.href;
 
-      let container =
-        a.closest("article") ||
-        a.closest("li") ||
-        a.closest("section") ||
-        a.closest("div");
-      if (!container) container = a.parentElement || document.body;
+      // Find the title anchor within the article
+      const titleAnchor = Array.from(article.querySelectorAll("a")).find((el) => {
+        const href = el.href || "";
+        const text = (el.textContent || "").trim();
+        // Must have text, not be a download/embed link, and have year in path
+        return text && 
+               !href.includes("ondemand.npr.org") && 
+               !href.includes("player/embed") && 
+               /\/20\d{2}\//.test(href);
+      });
 
-      function findTitleAnchor(start) {
-        const MAX_DEPTH = 10;
-        let node = start;
-        let depth = 0;
-
-        while (node && depth < MAX_DEPTH) {
-          const candidates = Array.from(
-            node.querySelectorAll("a")
-          ).filter((el) => {
-            const href = el.href || "";
-            const text = (el.textContent || "").trim();
-            if (!text) return false;
-            if (href.includes("ondemand.npr.org")) return false;
-            if (href.includes("player/embed")) return false;
-            if (!/\/20\d{2}\//.test(href)) return false;
-            return true;
-          });
-
-          if (candidates.length > 0) {
-            const headingCandidate =
-              candidates.find((el) =>
-                /H[12]/i.test(el.parentElement?.tagName || "")
-              ) || candidates[0];
-            return headingCandidate;
-          }
-
-          node = node.parentElement;
-          depth++;
-        }
-
-        return null;
-      }
-
-      const titleAnchor = findTitleAnchor(container);
       const title = titleAnchor?.textContent?.trim() || "Untitled episode";
       const link = titleAnchor?.href || audioUrl;
 
-      let contextText = "";
-      if (titleAnchor && titleAnchor.parentElement) {
-        contextText = titleAnchor.parentElement.textContent || "";
-      } else {
-        contextText = container.textContent || "";
-      }
+      // Use the entire article as context for extracting information
+      const contextText = article.textContent || "";
 
-      const dateMatch = contextText.match(
-        /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}\b/
-      );
-      const dateText = dateMatch ? dateMatch[0] : "";
+      // Try multiple date extraction strategies
+      let dateText = "";
+      
+      // Strategy 1: Extract date from the audio URL (most reliable for NPR)
+      // NPR URLs often contain dates like: /2025/10/20251014_specials_...
+      const urlDateMatch = audioUrl.match(/\/(\d{4})\/\d{2}\/(\d{8})/);
+      if (urlDateMatch) {
+        const dateStr = urlDateMatch[2]; // e.g., "20251014"
+        if (dateStr.length === 8) {
+          const year = dateStr.substring(0, 4);
+          const month = dateStr.substring(4, 6);
+          const day = dateStr.substring(6, 8);
+          dateText = `${year}-${month}-${day}`;
+        }
+      }
+      
+      // Strategy 2: Look for full month name dates in context
+      if (!dateText) {
+        let dateMatch = contextText.match(
+          /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}\b/
+        );
+        
+        if (dateMatch) {
+          dateText = dateMatch[0];
+        } else {
+          // Strategy 3: Look for abbreviated month dates
+          dateMatch = contextText.match(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s+\d{4}\b/);
+          if (dateMatch) {
+            dateText = dateMatch[0];
+          } else {
+            // Strategy 4: Look for ISO-style dates
+            dateMatch = contextText.match(/\b\d{4}-\d{2}-\d{2}\b/);
+            if (dateMatch) {
+              dateText = dateMatch[0];
+            } else {
+              // Strategy 5: Look for slash dates
+              dateMatch = contextText.match(/\b\d{1,2}\/\d{1,2}\/\d{4}\b/);
+              if (dateMatch) {
+                dateText = dateMatch[0];
+              }
+            }
+          }
+        }
+      }
 
       let description = "";
       const bulletIndex = contextText.indexOf("•");
@@ -183,15 +216,18 @@ async function scrapeRecentEpisodes(page) {
       }
 
       if (!description) {
+        // Look for description text in the article
         const blocks = Array.from(
-          container.querySelectorAll("p, span, div")
+          article.querySelectorAll("p, span, div")
         ).map((el) => (el.textContent || "").trim());
         for (const block of blocks) {
           if (
             block &&
             block.length > 40 &&
             !block.includes(title) &&
-            !block.includes("Listen ·")
+            !block.includes("Listen ·") &&
+            !block.includes("Download") &&
+            !block.includes("Embed")
           ) {
             description = block;
             break;

@@ -5,7 +5,11 @@
   "type": "module",
   "main": "src/scrape-jazz-night.mjs",
   "scripts": {
+    "debug-selectors": "node debug-selectors.mjs",
     "build": "node src/scrape-jazz-night.mjs",
+    "build:custom": "node src/scrape-jazz-night.mjs",
+    "build:50": "MAX_EPISODES=50 node src/scrape-jazz-night.mjs",
+    "build:test": "MAX_EPISODES=10 OUTPUT_FILE=feeds/test-feed.xml node src/scrape-jazz-night.mjs",
     "update": "node src/update-jazz-night.mjs"
   },
   "dependencies": {
