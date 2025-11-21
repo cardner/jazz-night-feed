@@ -1,208 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-  <title>Jazz Night In America: The Radio Program (Full Archive)</title>
-  <link>https://www.npr.org/series/347174538/jazz-night-radio</link>
-  <atom:link href="https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml" rel="self" type="application/rss+xml" />
-  <description>Scraped archive of NPR&apos;s Jazz Night In America radio episodes, with direct MP3 enclosures, formatted for Zune.</description>
-  <language>en-us</language>
-  <lastBuildDate>Sun, 16 Nov 2025 20:39:38 GMT</lastBuildDate>
-
-  <image>
-    <url>https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png</url>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
     <title>Jazz Night In America: The Radio Program (Full Archive)</title>
     <link>https://www.npr.org/series/347174538/jazz-night-radio</link>
-  </image>
-  <itunes:image href="https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png" />
-  <item>
-    <title>Saxophonist Nicole Glover had to face herself to find her sound</title>
-    <link>https://www.npr.org/2025/10/17/nx-s1-5574225/jazz-night-nicole-glover-saxophone</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/10/20251014_specials_nicole_glover-headline_tbd.mp3?d=3523&amp;size=56384871&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Tue, 14 Oct 2025 00:00:00 GMT</pubDate>
-    <description>Glover fought to build a life in music. From Portland, Ore., to New York City, her story traces resilience, creativity and the strength she found through sincerity. Nicole Glover - Headline tbd Listen· 58:4358-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/10/20251014_specials_nicole_glover-headline_tbd.mp3?d=3523&amp;size=56384871&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>The beat goes on: Marcus Gilmore steps forward at the Vanguard</title>
-    <link>https://www.npr.org/2025/09/25/nx-s1-5551109/jazz-night-marcus-gilmore-journey-village-vanguard</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/09/20250923_specials_jnia_marcus_gilmore_ep.mp3?d=3293&amp;size=52697635&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Tue, 23 Sep 2025 00:00:00 GMT</pubDate>
-    <description>Drummer Marcus Gilmore joins Christian McBride to celebrate his Vanguard debut and reflect on the legacy of his grandfather, Roy Haynes, while carving his own path with Journey to the New. JNIA Marcus Gilmore Ep Listen· 54:5354-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/09/20250923_specials_jnia_marcus_gilmore_ep.mp3?d=3293&amp;size=52697635&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Remembering Sheila Jordan, a voice that defined bebop&apos;s spirit</title>
-    <link>https://www.npr.org/2025/08/14/nx-s1-5502396/remembering-sheila-jordan-a-voice-that-defined-bebops-spirit</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/08/20250814_specials_jnia_shelia_jordan_update.mp3?d=3475&amp;size=55603705&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 14 Aug 2025 00:00:00 GMT</pubDate>
-    <description>Among the last beboppers, one of the first singers on Blue Note and a pioneer of voice and bass, Sheila Jordan left an indelible mark on jazz. In this conversation from 2023, she joined Christian McBride to reflect on her remarkable life and music. JNIA Shelia Jordan update Listen· 57:5557-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/08/20250814_specials_jnia_shelia_jordan_update.mp3?d=3475&amp;size=55603705&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>How pianist Fred Hersch&apos;s daring collaborations shaped his career</title>
-    <link>https://www.npr.org/2025/07/17/nx-s1-5464879/jazz-night-fred-hersch</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/07/20250717_specials_how_pianist_fred_hersch_s_daring_collaborations_shaped_his_career.mp3?d=3540&amp;size=56641080&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
-    <description>As he nears 70, pianist Fred Hersch looks back on a fearless life in jazz, sharing personal favorites, stories behind bold collaborations and music from his new album. How pianist Fred Hersch’s daring collaborations shaped his career Listen· 59:0059-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/07/20250717_specials_how_pianist_fred_hersch_s_daring_collaborations_shaped_his_career.mp3?d=3540&amp;size=56641080&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Jazz House Kids is rewriting the rules of jazz education</title>
-    <link>https://www.npr.org/2025/06/18/nx-s1-5437707/jazz-house-kids-is-rewriting-the-rules-of-jazz-education</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/06/20250618_specials_jazz_house_kids_tbd.mp3?size=53875444&amp;d=3367172&amp;e=nx-s1-5437707&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
-    <description>Jazz House Kids trains the next generation of jazz stars — alums include Isaiah J. Thompson and Immanuel Wilkins — and gives every young musician a place to belong. Jazz House Kids TBD Listen· 56:0756-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/06/20250618_specials_jazz_house_kids_tbd.mp3?size=53875444&amp;d=3367172&amp;e=nx-s1-5437707&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>10 tracks, 10 bands: A wild ride through Hiromi&apos;s music</title>
-    <link>https://www.npr.org/2025/05/15/nx-s1-5399167/jazz-night-hiromi-in-10-tracks</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250515_specials_jazz_night_hiromi.mp3?size=58711650&amp;d=3669426&amp;e=nx-s1-5399167&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 15 May 2025 00:00:00 GMT</pubDate>
-    <description>Pianist Hiromi picks a track from 10 different bands she&apos;s led or joined, tracing the bold ideas and unexpected turns that have shaped her ever-evolving sound. Jazz Night Hiromi Listen· 1:01:091-Hour, 1-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250515_specials_jazz_night_hiromi.mp3?size=58711650&amp;d=3669426&amp;e=nx-s1-5399167&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Remembering Andy Bey: A love letter to a jazz legend</title>
-    <link>https://www.npr.org/2025/05/01/nx-s1-5383130/remembering-andy-bey-a-jazz-legend</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250501_specials_andy_bey_a_love_letter_to_a_jazz_legend.mp3?d=3621&amp;size=57937172&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
-    <description>A master of vocal jazz, Andy Bey left behind a singular legacy. This tribute revisits his life, music and a rare, reflective interview recorded near his 80th birthday. Andy Bey: A Love Letter To A Jazz Legend Listen· 1:00:211-Hour ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250501_specials_andy_bey_a_love_letter_to_a_jazz_legend.mp3?d=3621&amp;size=57937172&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Gather around &apos;The Yule Log&apos; with pianist George Burton</title>
-    <link>https://www.npr.org/2024/12/19/nx-s1-5233093/jazz-night-in-america-george-burton-the-yule-log</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/12/20241218_specials_gather_around_the_yule_log_with_pianist_george_burton.mp3?size=53863741&amp;d=3366429&amp;e=nx-s1-5233093&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Wed, 18 Dec 2024 00:00:00 GMT</pubDate>
-    <description>On this special holiday episode, we gather around the fire for a special listen to pianist George Burton&apos;s burning Christmas record, The Yule Log. We&apos;ll hear some favorites and some deep, deep Christmas cuts. Gather around the ‘Yule Log’ with pianist George Burton Listen· 56:0656-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/12/20241218_specials_gather_around_the_yule_log_with_pianist_george_burton.mp3?size=53863741&amp;d=3366429&amp;e=nx-s1-5233093&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>50 years in 10 tracks: A career-spanning playlist from John Scofield</title>
-    <link>https://www.npr.org/2024/10/16/nx-s1-5154104/jazz-night-john-scofield-50-years</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/10/20241015_specials_50_years_in_10_tracks_a_career-spanning_playlist_from_john_scofield.mp3?size=53715784&amp;d=3357187&amp;e=nx-s1-5154104&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
-    <description>Guitarist John Scofield picks 10 of his favorite tracks from his own catalog and shares the stories behind them as he celebrates 50 years of recorded music. 50 years in 10 tracks: A career-spanning playlist from John Scofield Listen· 55:5755-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/10/20241015_specials_50_years_in_10_tracks_a_career-spanning_playlist_from_john_scofield.mp3?size=53715784&amp;d=3357187&amp;e=nx-s1-5154104&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>George Benson on success, critics and staying true to himself</title>
-    <link>https://www.npr.org/2024/09/19/nx-s1-5114356/jazz-night-in-america-george-benson</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/09/20240919_specials_george_benson_on_success_critics_and_staying_true_to_himself.mp3?size=54046390&amp;d=3377853&amp;e=nx-s1-5114356&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 19 Sep 2024 00:00:00 GMT</pubDate>
-    <description>Vocalist, guitarist and jazz icon George Benson joins Christian McBride for a conversation about his early years on the jazz scene, fame and his new “lost” album. George Benson on success, critics and staying true to himself Listen· 56:1756-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/09/20240919_specials_george_benson_on_success_critics_and_staying_true_to_himself.mp3?size=54046390&amp;d=3377853&amp;e=nx-s1-5114356&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Sarah Hanahan: A rising star on the alto saxophone</title>
-    <link>https://www.npr.org/2024/09/03/nx-s1-5099019/jazz-night-in-america-sarah-hanahan-alto-sax-rising-star</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/09/20240903_specials_sarah_hanahan_a_rising_star_on_the_alto_saxophone.mp3?d=3410&amp;size=54568421&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Tue, 03 Sep 2024 00:00:00 GMT</pubDate>
-    <description>We put the spotlight on Sarah Hanahan — one of the most exciting alto saxophonists of her generation. Hear her blazing set from the Caramoor Jazz Festival and music from her debut album, Among Giants. Sarah Hanahan: A rising star on the alto saxophone Listen· 56:5056-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/09/20240903_specials_sarah_hanahan_a_rising_star_on_the_alto_saxophone.mp3?d=3410&amp;size=54568421&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Jazz (Fest) in America</title>
-    <link>https://www.npr.org/2024/07/26/nx-s1-5053042/jazz-fest-in-america</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/07/20240726_specials_jazz_fest_in_america.mp3?size=53965723&amp;d=3372814&amp;e=nx-s1-5053042&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
-    <description>It’s summertime! Celebrate the season of sun and sounds with live music from some of our favorite festivals around the world. Jazz (Fest) in America Listen· 56:1256-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/07/20240726_specials_jazz_fest_in_america.mp3?size=53965723&amp;d=3372814&amp;e=nx-s1-5053042&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Pianist Omar Sosa plays &apos;child trickster&apos; in divinely inspired musical journey</title>
-    <link>https://www.npr.org/2024/05/31/nx-s1-4984986/jazz-night-in-america-pianist-omar-sosa</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240529_specials_pianist_omar_sosa_plays_the_child_trickster_in_his_divinely-inspired_musical_journey.mp3?size=53651000&amp;d=3353141&amp;e=nx-s1-4984986&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
-    <description>What happened when the Cuban pianist Omar Sosa met with a Santería high priest? He found his life calling. JNIA_OmarSosa_Web.wav Listen· 55:5355-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240529_specials_pianist_omar_sosa_plays_the_child_trickster_in_his_divinely-inspired_musical_journey.mp3?size=53651000&amp;d=3353141&amp;e=nx-s1-4984986&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Youngbloods, Vibes: Joel Ross, Sasha Berliner and Simon Moullier</title>
-    <link>https://www.npr.org/2023/09/28/1202016106/youngbloods-vibes-joel-ross-sasha-berliner-and-simon-moullier</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240517_specials_172e0483-c1e4-45ca-a00c-7f8d5563e0de.mp3?d=3367&amp;size=53880042&amp;e=1202016106&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Fri, 17 May 2024 00:00:00 GMT</pubDate>
-    <description>Youngbloods 2023: Joel Ross, Simon Moullier, Sasha Berliner Youngbloods, Vibes: Joel Ross, Sasha Berliner and Simon Moullier Listen· 56:0756-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240517_specials_172e0483-c1e4-45ca-a00c-7f8d5563e0de.mp3?d=3367&amp;size=53880042&amp;e=1202016106&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>McLean&apos;s Scene: How Jackie McLean made Hartford a destination for jazz</title>
-    <link>https://www.npr.org/2024/02/29/1234191474/how-jackie-mclean-made-hartford-a-destination-for-jazz</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/02/20240229_specials_b5dad8c2-a7e6-4b80-8812-0b728f591def.mp3?d=3390&amp;size=54251982&amp;e=1234191474&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
-    <description>At a time when jazz was not widely seen in higher education, the alto saxophonist brought the wisdom learned on the bandstand to the classroom. McLean&apos;s Scene: How Jackie McLean made Hartford a destination for jazz Listen· 56:3056-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/02/20240229_specials_b5dad8c2-a7e6-4b80-8812-0b728f591def.mp3?d=3390&amp;size=54251982&amp;e=1234191474&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Pianist Christian Sands shares his &apos;Christmas Stories&apos; for the holidays</title>
-    <link>https://www.npr.org/2023/12/14/1218931182/pianist-christian-sands-shares-his-christmas-stories-for-the-holidays</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2023/12/20231214_specials_1bd12eed-3945-43a0-9a6f-0bc50cd4d3d0.mp3?d=3365&amp;size=53845726&amp;e=1218931182&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
-    <description>Pianist Christian Sands shares music from his new record, Christmas Stories. We&apos;ll hear tales of his childhood in snowy Connecticut, the ultimate Christmas party music and an exclusive song. Pianist Christian Sands shares his &apos;Christmas Stories&apos; for the holidays Listen· 56:0556-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2023/12/20231214_specials_1bd12eed-3945-43a0-9a6f-0bc50cd4d3d0.mp3?d=3365&amp;size=53845726&amp;e=1218931182&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Relive the 2023 American Pianists Awards from Indianapolis</title>
-    <link>https://www.npr.org/2023/07/13/1187462344/relive-the-2023-american-pianists-awards-from-indianapolis</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2023/07/20230713_specials_46fd5845-5b01-4377-8f35-2071eba245bb.mp3?d=3364&amp;size=53829426&amp;e=1187462344&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 13 Jul 2023 00:00:00 GMT</pubDate>
-    <description>Five young pianists compete for the American Pianists Association Cole Porter Fellowship in Jazz. Relive the 2023 American Pianists Awards from Indianapolis Listen· 56:0456-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2023/07/20230713_specials_46fd5845-5b01-4377-8f35-2071eba245bb.mp3?d=3364&amp;size=53829426&amp;e=1187462344&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Jazz Night In America remembers the artists we&apos;ve lost</title>
-    <link>https://www.npr.org/2022/12/29/1145909944/jazz-night-in-america-remembers-the-artists-weve-lost</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/12/20221229_specials_44e6fb1d-b0fd-43f8-94e1-dc628918335d.mp3?d=3426&amp;size=54819153&amp;e=1145909944&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 29 Dec 2022 00:00:00 GMT</pubDate>
-    <description>Jazz Night In America&apos;s video tribute to the artists lost in 2022. Jazz Night In America remembers the artists we&apos;ve lost Listen· 57:0657-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/12/20221229_specials_44e6fb1d-b0fd-43f8-94e1-dc628918335d.mp3?d=3426&amp;size=54819153&amp;e=1145909944&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>Drummer Nate Smith arranges funky grooves with strings attached</title>
-    <link>https://www.npr.org/2022/12/01/1139896557/drummer-nate-smith-arranges-funky-grooves-with-strings-attached</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/12/20221201_specials_e5e66d3c-e6b3-4234-8c80-1fe015b3f13a.mp3?d=3355&amp;size=53689827&amp;e=1139896557&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 01 Dec 2022 00:00:00 GMT</pubDate>
-    <description>Hear the premiere of Nate Smith&apos;s groovy sextet Kinfolk, with a double string quartet featuring members of the Memphis Symphony Orchestra. Drummer Nate Smith arranges funky grooves with strings attached Listen· 55:5555-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/12/20221201_specials_e5e66d3c-e6b3-4234-8c80-1fe015b3f13a.mp3?d=3355&amp;size=53689827&amp;e=1139896557&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>BADBADNOTGOOD steps into the psychedelic void</title>
-    <link>https://www.npr.org/2022/11/17/1136631657/badbadnotgood-steps-into-the-psychedelic-void</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/11/20221117_specials_9dfa0782-83c9-4616-8fc5-e7a3bc12270b.mp3?d=3359&amp;size=53757955&amp;e=1136631657&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 17 Nov 2022 00:00:00 GMT</pubDate>
-    <description>More than a decade after BADBADNOTGOOD&apos;s viral debut upsetting the &quot;jazz police&quot; and carving their own niche playing rap covers, they take the stage in Brooklyn with a wildly psychedelic set. BADBADNOTGOOD steps into the psychedelic void Listen· 55:5955-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/11/20221117_specials_9dfa0782-83c9-4616-8fc5-e7a3bc12270b.mp3?d=3359&amp;size=53757955&amp;e=1136631657&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-
-  <item>
-    <title>An American in Paris: organist Rhoda Scott&apos;s remarkable career in Jazz</title>
-    <link>https://www.npr.org/2022/07/28/1113955872/an-american-in-paris-organist-rhoda-scotts-remarkable-career-in-jazz</link>
-    <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/07/20220728_specials_4a199abe-f266-4d27-a526-f459a3ae8193.mp3?d=3406&amp;size=54501730&amp;e=1113955872&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-    <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
-    <description>Jazz Night shines a light on an American organist who moved to Europe on a whim and became a jazz superstar. Hear the remarkable story of Rhoda Scott. An American in Paris: organist Rhoda Scott&apos;s remarkable career in Jazz Listen· 56:4656-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-    <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/07/20220728_specials_4a199abe-f266-4d27-a526-f459a3ae8193.mp3?d=3406&amp;size=54501730&amp;e=1113955872&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg" />
-  </item>
-</channel>
+    <atom:link href="https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml" rel="self" type="application/rss+xml"/>
+    <description>Scraped archive of NPR's Jazz Night In America radio episodes, with direct MP3 enclosures, formatted for Zune.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Nov 2025 06:07:16 GMT</lastBuildDate>
+    <image>
+      <url>https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png</url>
+      <title>Jazz Night In America: The Radio Program (Full Archive)</title>
+      <link>https://www.npr.org/series/347174538/jazz-night-radio</link>
+    </image>
+    <itunes:image href="https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png"/>
+    <item>
+      <title>Three is not a crowd: Béla Fleck, Edmar Castañeda and Antonio Sánchez are BEATrio</title>
+      <link>https://www.npr.org/2025/11/20/nx-s1-5612425/jazz-night-beatrio-fleck-castaneda-sanchez</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/11/20251118_specials_beatrio-heading_tbd.mp3?d=3358&amp;amp;size=53734174&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+      <description>Banjo, harp and drums meet in the BEATrio, where Béla Fleck, Edmar Castañeda and Antonio Sánchez explore a sound they never planned to create. Hear how the trio first came together. Jazz Night: BEATrio Listen· 55:5855-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/11/20251118_specials_beatrio-heading_tbd.mp3?d=3358&amp;amp;size=53734174&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Saxophonist Nicole Glover had to face herself to find her sound</title>
+      <link>https://www.npr.org/2025/10/17/nx-s1-5574225/jazz-night-nicole-glover-saxophone</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/10/20251014_specials_nicole_glover-headline_tbd.mp3?d=3523&amp;size=56384871&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 GMT</pubDate>
+      <description>Glover fought to build a life in music. From Portland, Ore., to New York City, her story traces resilience, creativity and the strength she found through sincerity. Nicole Glover - Headline tbd Listen· 58:4358-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/10/20251014_specials_nicole_glover-headline_tbd.mp3?d=3523&amp;size=56384871&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>The beat goes on: Marcus Gilmore steps forward at the Vanguard</title>
+      <link>https://www.npr.org/2025/09/25/nx-s1-5551109/jazz-night-marcus-gilmore-journey-village-vanguard</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/09/20250923_specials_jnia_marcus_gilmore_ep.mp3?d=3293&amp;size=52697635&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 GMT</pubDate>
+      <description>Drummer Marcus Gilmore joins Christian McBride to celebrate his Vanguard debut and reflect on the legacy of his grandfather, Roy Haynes, while carving his own path with Journey to the New. JNIA Marcus Gilmore Ep Listen· 54:5354-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/09/20250923_specials_jnia_marcus_gilmore_ep.mp3?d=3293&amp;size=52697635&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Remembering Sheila Jordan, a voice that defined bebop's spirit</title>
+      <link>https://www.npr.org/2025/08/14/nx-s1-5502396/remembering-sheila-jordan-a-voice-that-defined-bebops-spirit</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/08/20250814_specials_jnia_shelia_jordan_update.mp3?d=3475&amp;size=55603705&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Among the last beboppers, one of the first singers on Blue Note and a pioneer of voice and bass, Sheila Jordan left an indelible mark on jazz. In this conversation from 2023, she joined Christian McBride to reflect on her remarkable life and music. JNIA Shelia Jordan update Listen· 57:5557-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/08/20250814_specials_jnia_shelia_jordan_update.mp3?d=3475&amp;size=55603705&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>How pianist Fred Hersch's daring collaborations shaped his career</title>
+      <link>https://www.npr.org/2025/07/17/nx-s1-5464879/jazz-night-fred-hersch</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/07/20250717_specials_how_pianist_fred_hersch_s_daring_collaborations_shaped_his_career.mp3?d=3540&amp;size=56641080&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
+      <description>As he nears 70, pianist Fred Hersch looks back on a fearless life in jazz, sharing personal favorites, stories behind bold collaborations and music from his new album. How pianist Fred Hersch’s daring collaborations shaped his career Listen· 59:0059-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/07/20250717_specials_how_pianist_fred_hersch_s_daring_collaborations_shaped_his_career.mp3?d=3540&amp;size=56641080&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Jazz House Kids is rewriting the rules of jazz education</title>
+      <link>https://www.npr.org/2025/06/18/nx-s1-5437707/jazz-house-kids-is-rewriting-the-rules-of-jazz-education</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/06/20250618_specials_jazz_house_kids_tbd.mp3?size=53875444&amp;d=3367172&amp;e=nx-s1-5437707&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
+      <description>Jazz House Kids trains the next generation of jazz stars — alums include Isaiah J. Thompson and Immanuel Wilkins — and gives every young musician a place to belong. Jazz House Kids TBD Listen· 56:0756-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/06/20250618_specials_jazz_house_kids_tbd.mp3?size=53875444&amp;d=3367172&amp;e=nx-s1-5437707&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>10 tracks, 10 bands: A wild ride through Hiromi's music</title>
+      <link>https://www.npr.org/2025/05/15/nx-s1-5399167/jazz-night-hiromi-in-10-tracks</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250515_specials_jazz_night_hiromi.mp3?size=58711650&amp;d=3669426&amp;e=nx-s1-5399167&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 15 May 2025 00:00:00 GMT</pubDate>
+      <description>Pianist Hiromi picks a track from 10 different bands she's led or joined, tracing the bold ideas and unexpected turns that have shaped her ever-evolving sound. Jazz Night Hiromi Listen· 1:01:091-Hour, 1-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250515_specials_jazz_night_hiromi.mp3?size=58711650&amp;d=3669426&amp;e=nx-s1-5399167&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Remembering Andy Bey: A love letter to a jazz legend</title>
+      <link>https://www.npr.org/2025/05/01/nx-s1-5383130/remembering-andy-bey-a-jazz-legend</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250501_specials_andy_bey_a_love_letter_to_a_jazz_legend.mp3?d=3621&amp;size=57937172&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+      <description>A master of vocal jazz, Andy Bey left behind a singular legacy. This tribute revisits his life, music and a rare, reflective interview recorded near his 80th birthday. Andy Bey: A Love Letter To A Jazz Legend Listen· 1:00:211-Hour ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250501_specials_andy_bey_a_love_letter_to_a_jazz_legend.mp3?d=3621&amp;size=57937172&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Gather around 'The Yule Log' with pianist George Burton</title>
+      <link>https://www.npr.org/2024/12/19/nx-s1-5233093/jazz-night-in-america-george-burton-the-yule-log</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/12/20241218_specials_gather_around_the_yule_log_with_pianist_george_burton.mp3?size=53863741&amp;d=3366429&amp;e=nx-s1-5233093&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 GMT</pubDate>
+      <description>On this special holiday episode, we gather around the fire for a special listen to pianist George Burton's burning Christmas record, The Yule Log. We'll hear some favorites and some deep, deep Christmas cuts. Gather around the ‘Yule Log’ with pianist George Burton Listen· 56:0656-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/12/20241218_specials_gather_around_the_yule_log_with_pianist_george_burton.mp3?size=53863741&amp;d=3366429&amp;e=nx-s1-5233093&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>50 years in 10 tracks: A career-spanning playlist from John Scofield</title>
+      <link>https://www.npr.org/2024/10/16/nx-s1-5154104/jazz-night-john-scofield-50-years</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/10/20241015_specials_50_years_in_10_tracks_a_career-spanning_playlist_from_john_scofield.mp3?size=53715784&amp;d=3357187&amp;e=nx-s1-5154104&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+      <description>Guitarist John Scofield picks 10 of his favorite tracks from his own catalog and shares the stories behind them as he celebrates 50 years of recorded music. 50 years in 10 tracks: A career-spanning playlist from John Scofield Listen· 55:5755-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/10/20241015_specials_50_years_in_10_tracks_a_career-spanning_playlist_from_john_scofield.mp3?size=53715784&amp;d=3357187&amp;e=nx-s1-5154104&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>George Benson on success, critics and staying true to himself</title>
+      <link>https://www.npr.org/2024/09/19/nx-s1-5114356/jazz-night-in-america-george-benson</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/09/20240919_specials_george_benson_on_success_critics_and_staying_true_to_himself.mp3?size=54046390&amp;d=3377853&amp;e=nx-s1-5114356&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 19 Sep 2024 00:00:00 GMT</pubDate>
+      <description>Vocalist, guitarist and jazz icon George Benson joins Christian McBride for a conversation about his early years on the jazz scene, fame and his new “lost” album. George Benson on success, critics and staying true to himself Listen· 56:1756-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/09/20240919_specials_george_benson_on_success_critics_and_staying_true_to_himself.mp3?size=54046390&amp;d=3377853&amp;e=nx-s1-5114356&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Sarah Hanahan: A rising star on the alto saxophone</title>
+      <link>https://www.npr.org/2024/09/03/nx-s1-5099019/jazz-night-in-america-sarah-hanahan-alto-sax-rising-star</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/09/20240903_specials_sarah_hanahan_a_rising_star_on_the_alto_saxophone.mp3?d=3410&amp;size=54568421&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 GMT</pubDate>
+      <description>We put the spotlight on Sarah Hanahan — one of the most exciting alto saxophonists of her generation. Hear her blazing set from the Caramoor Jazz Festival and music from her debut album, Among Giants. Sarah Hanahan: A rising star on the alto saxophone Listen· 56:5056-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/09/20240903_specials_sarah_hanahan_a_rising_star_on_the_alto_saxophone.mp3?d=3410&amp;size=54568421&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Jazz (Fest) in America</title>
+      <link>https://www.npr.org/2024/07/26/nx-s1-5053042/jazz-fest-in-america</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/07/20240726_specials_jazz_fest_in_america.mp3?size=53965723&amp;d=3372814&amp;e=nx-s1-5053042&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
+      <description>It’s summertime! Celebrate the season of sun and sounds with live music from some of our favorite festivals around the world. Jazz (Fest) in America Listen· 56:1256-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/07/20240726_specials_jazz_fest_in_america.mp3?size=53965723&amp;d=3372814&amp;e=nx-s1-5053042&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Pianist Omar Sosa plays 'child trickster' in divinely inspired musical journey</title>
+      <link>https://www.npr.org/2024/05/31/nx-s1-4984986/jazz-night-in-america-pianist-omar-sosa</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240529_specials_pianist_omar_sosa_plays_the_child_trickster_in_his_divinely-inspired_musical_journey.mp3?size=53651000&amp;d=3353141&amp;e=nx-s1-4984986&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
+      <description>What happened when the Cuban pianist Omar Sosa met with a Santería high priest? He found his life calling. JNIA_OmarSosa_Web.wav Listen· 55:5355-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240529_specials_pianist_omar_sosa_plays_the_child_trickster_in_his_divinely-inspired_musical_journey.mp3?size=53651000&amp;d=3353141&amp;e=nx-s1-4984986&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Youngbloods, Vibes: Joel Ross, Sasha Berliner and Simon Moullier</title>
+      <link>https://www.npr.org/2023/09/28/1202016106/youngbloods-vibes-joel-ross-sasha-berliner-and-simon-moullier</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240517_specials_172e0483-c1e4-45ca-a00c-7f8d5563e0de.mp3?d=3367&amp;size=53880042&amp;e=1202016106&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Fri, 17 May 2024 00:00:00 GMT</pubDate>
+      <description>Youngbloods 2023: Joel Ross, Simon Moullier, Sasha Berliner Youngbloods, Vibes: Joel Ross, Sasha Berliner and Simon Moullier Listen· 56:0756-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240517_specials_172e0483-c1e4-45ca-a00c-7f8d5563e0de.mp3?d=3367&amp;size=53880042&amp;e=1202016106&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>McLean's Scene: How Jackie McLean made Hartford a destination for jazz</title>
+      <link>https://www.npr.org/2024/02/29/1234191474/how-jackie-mclean-made-hartford-a-destination-for-jazz</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/02/20240229_specials_b5dad8c2-a7e6-4b80-8812-0b728f591def.mp3?d=3390&amp;size=54251982&amp;e=1234191474&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
+      <description>At a time when jazz was not widely seen in higher education, the alto saxophonist brought the wisdom learned on the bandstand to the classroom. McLean's Scene: How Jackie McLean made Hartford a destination for jazz Listen· 56:3056-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/02/20240229_specials_b5dad8c2-a7e6-4b80-8812-0b728f591def.mp3?d=3390&amp;size=54251982&amp;e=1234191474&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Pianist Christian Sands shares his 'Christmas Stories' for the holidays</title>
+      <link>https://www.npr.org/2023/12/14/1218931182/pianist-christian-sands-shares-his-christmas-stories-for-the-holidays</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2023/12/20231214_specials_1bd12eed-3945-43a0-9a6f-0bc50cd4d3d0.mp3?d=3365&amp;size=53845726&amp;e=1218931182&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
+      <description>Pianist Christian Sands shares music from his new record, Christmas Stories. We'll hear tales of his childhood in snowy Connecticut, the ultimate Christmas party music and an exclusive song. Pianist Christian Sands shares his 'Christmas Stories' for the holidays Listen· 56:0556-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2023/12/20231214_specials_1bd12eed-3945-43a0-9a6f-0bc50cd4d3d0.mp3?d=3365&amp;size=53845726&amp;e=1218931182&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Relive the 2023 American Pianists Awards from Indianapolis</title>
+      <link>https://www.npr.org/2023/07/13/1187462344/relive-the-2023-american-pianists-awards-from-indianapolis</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2023/07/20230713_specials_46fd5845-5b01-4377-8f35-2071eba245bb.mp3?d=3364&amp;size=53829426&amp;e=1187462344&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 GMT</pubDate>
+      <description>Five young pianists compete for the American Pianists Association Cole Porter Fellowship in Jazz. Relive the 2023 American Pianists Awards from Indianapolis Listen· 56:0456-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2023/07/20230713_specials_46fd5845-5b01-4377-8f35-2071eba245bb.mp3?d=3364&amp;size=53829426&amp;e=1187462344&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Jazz Night In America remembers the artists we've lost</title>
+      <link>https://www.npr.org/2022/12/29/1145909944/jazz-night-in-america-remembers-the-artists-weve-lost</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/12/20221229_specials_44e6fb1d-b0fd-43f8-94e1-dc628918335d.mp3?d=3426&amp;size=54819153&amp;e=1145909944&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 29 Dec 2022 00:00:00 GMT</pubDate>
+      <description>Jazz Night In America's video tribute to the artists lost in 2022. Jazz Night In America remembers the artists we've lost Listen· 57:0657-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/12/20221229_specials_44e6fb1d-b0fd-43f8-94e1-dc628918335d.mp3?d=3426&amp;size=54819153&amp;e=1145909944&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Drummer Nate Smith arranges funky grooves with strings attached</title>
+      <link>https://www.npr.org/2022/12/01/1139896557/drummer-nate-smith-arranges-funky-grooves-with-strings-attached</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/12/20221201_specials_e5e66d3c-e6b3-4234-8c80-1fe015b3f13a.mp3?d=3355&amp;size=53689827&amp;e=1139896557&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 GMT</pubDate>
+      <description>Hear the premiere of Nate Smith's groovy sextet Kinfolk, with a double string quartet featuring members of the Memphis Symphony Orchestra. Drummer Nate Smith arranges funky grooves with strings attached Listen· 55:5555-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/12/20221201_specials_e5e66d3c-e6b3-4234-8c80-1fe015b3f13a.mp3?d=3355&amp;size=53689827&amp;e=1139896557&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>BADBADNOTGOOD steps into the psychedelic void</title>
+      <link>https://www.npr.org/2022/11/17/1136631657/badbadnotgood-steps-into-the-psychedelic-void</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/11/20221117_specials_9dfa0782-83c9-4616-8fc5-e7a3bc12270b.mp3?d=3359&amp;size=53757955&amp;e=1136631657&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 GMT</pubDate>
+      <description>More than a decade after BADBADNOTGOOD's viral debut upsetting the "jazz police" and carving their own niche playing rap covers, they take the stage in Brooklyn with a wildly psychedelic set. BADBADNOTGOOD steps into the psychedelic void Listen· 55:5955-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/11/20221117_specials_9dfa0782-83c9-4616-8fc5-e7a3bc12270b.mp3?d=3359&amp;size=53757955&amp;e=1136631657&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>An American in Paris: organist Rhoda Scott's remarkable career in Jazz</title>
+      <link>https://www.npr.org/2022/07/28/1113955872/an-american-in-paris-organist-rhoda-scotts-remarkable-career-in-jazz</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/07/20220728_specials_4a199abe-f266-4d27-a526-f459a3ae8193.mp3?d=3406&amp;size=54501730&amp;e=1113955872&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
+      <description>Jazz Night shines a light on an American organist who moved to Europe on a whim and became a jazz superstar. Hear the remarkable story of Rhoda Scott. An American in Paris: organist Rhoda Scott's remarkable career in Jazz Listen· 56:4656-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2022/07/20220728_specials_4a199abe-f266-4d27-a526-f459a3ae8193.mp3?d=3406&amp;size=54501730&amp;e=1113955872&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+  </channel>
 </rss>
