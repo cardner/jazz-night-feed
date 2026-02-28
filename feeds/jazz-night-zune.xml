@@ -6,7 +6,7 @@
     <atom:link href="https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml" rel="self" type="application/rss+xml"/>
     <description>Scraped archive of NPR's Jazz Night In America radio episodes, with direct MP3 enclosures, formatted for Zune.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Feb 2026 06:19:11 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 06:09:41 GMT</lastBuildDate>
     <image>
       <url>https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png</url>
       <title>Jazz Night In America: The Radio Program (Full Archive)</title>
@@ -294,12 +294,12 @@
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/01/20260122_specials_jazz_centennials_eight_legends_born_in_1926.mp3?d=3354&amp;amp;size=53676078&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
-      <title>Have a Blue (Note) Christmas with Don Was</title>
-      <link>https://www.npr.org/2025/12/18/nx-s1-5644993/don-was-blue-note-christmas-playlist</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/12/20251216_specials_have_a_blue_note_christmas_with_don_was-unedited.mp3?d=3377&amp;amp;size=54038030&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Tue, 16 Dec 2025 00:00:00 GMT</pubDate>
-      <description>Don Was digs into the Blue Note Records vault for a different kind of Christmas playlist, bringing together rare cuts, classics and deep grooves from across the label&amp;apos;s history. Have a Blue (Note) Christmas with Don Was - UNEDITED Listen· 56:1756-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/12/20251216_specials_have_a_blue_note_christmas_with_don_was-unedited.mp3?d=3377&amp;amp;size=54038030&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+      <title>Jazz centennials: Eight legends born in 1926</title>
+      <link>https://www.npr.org/2026/01/22/nx-s1-5683279/eight-jazz-legends-born-in-1926</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/01/20260122_specials_jazz_centennials_eight_legends_born_in_1926.mp3?d=3354&amp;amp;size=53676078&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+      <description>In 1926, a generation of artists was born that reshaped jazz for decades. This episode celebrates eight centennials, including Miles Davis, John Coltrane, Lou Donaldson, Tony Bennett and more. Jazz centennials: Eight legends born in 1926 Listen· 55:5455-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/01/20260122_specials_jazz_centennials_eight_legends_born_in_1926.mp3?d=3354&amp;amp;size=53676078&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>Have a Blue (Note) Christmas with Don Was</title>
