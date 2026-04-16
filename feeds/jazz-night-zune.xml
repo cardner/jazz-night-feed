@@ -6,13 +6,21 @@
     <atom:link href="https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml" rel="self" type="application/rss+xml"/>
     <description>Scraped archive of NPR's Jazz Night In America radio episodes, with direct MP3 enclosures, formatted for Zune.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2026 06:39:21 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 06:40:15 GMT</lastBuildDate>
     <image>
       <url>https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png</url>
       <title>Jazz Night In America: The Radio Program (Full Archive)</title>
       <link>https://www.npr.org/series/347174538/jazz-night-radio</link>
     </image>
     <itunes:image href="https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png"/>
+    <item>
+      <title>Flea returns to his first love: jazz</title>
+      <link>https://www.npr.org/2026/03/26/nx-s1-5759281/jazz-night-flea-honora-album</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/03/20260326_specials_jnia_mcbride_x_flea.mp3?d=3355&amp;amp;size=53694886&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Flea&amp;apos;s first musical love wasn&amp;apos;t rock. It was jazz. The iconic bassist joins Christian McBride to talk about his debut solo album, Honora, and his return to the music that started it all. Flea returns to his first love, jazz Listen· 55:5555-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/03/20260326_specials_jnia_mcbride_x_flea.mp3?d=3355&amp;amp;size=53694886&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
     <item>
       <title>Flea returns to his first love: jazz</title>
       <link>https://www.npr.org/2026/03/26/nx-s1-5759281/jazz-night-flea-honora-album</link>
@@ -526,20 +534,12 @@
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/02/20260225_specials_finding_their_calling_in_jazz_tyreek_mcdole_and_milena_casado.mp3?d=3370&amp;amp;size=53925181&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
-      <title>Jazz centennials: Eight legends born in 1926</title>
-      <link>https://www.npr.org/2026/01/22/nx-s1-5683279/eight-jazz-legends-born-in-1926</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/01/20260122_specials_jazz_centennials_eight_legends_born_in_1926.mp3?d=3354&amp;amp;size=53676078&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
-      <description>In 1926, a generation of artists was born that reshaped jazz for decades. This episode celebrates eight centennials, including Miles Davis, John Coltrane, Lou Donaldson, Tony Bennett and more. Jazz centennials: Eight legends born in 1926 Listen· 55:5455-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/01/20260122_specials_jazz_centennials_eight_legends_born_in_1926.mp3?d=3354&amp;amp;size=53676078&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
-    </item>
-    <item>
-      <title>Jazz centennials: Eight legends born in 1926</title>
-      <link>https://www.npr.org/2026/01/22/nx-s1-5683279/eight-jazz-legends-born-in-1926</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/01/20260122_specials_jazz_centennials_eight_legends_born_in_1926.mp3?d=3354&amp;amp;size=53676078&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
-      <description>In 1926, a generation of artists was born that reshaped jazz for decades. This episode celebrates eight centennials, including Miles Davis, John Coltrane, Lou Donaldson, Tony Bennett and more. Jazz centennials: Eight legends born in 1926 Listen· 55:5455-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/01/20260122_specials_jazz_centennials_eight_legends_born_in_1926.mp3?d=3354&amp;amp;size=53676078&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+      <title>Tyreek McDole and Milena Casado on finding their calling in jazz</title>
+      <link>https://www.npr.org/2026/02/26/nx-s1-5726359/tyreek-mcdole-milena-casado</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/02/20260225_specials_finding_their_calling_in_jazz_tyreek_mcdole_and_milena_casado.mp3?d=3370&amp;amp;size=53925181&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
+      <description>Tyreek McDole and Milena Casado had no obvious paths to jazz. They each found one anyway, to the benefit of music fans. Finding Their Calling in Jazz: Tyreek McDole and Milena Casado Listen· 56:1056-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/02/20260225_specials_finding_their_calling_in_jazz_tyreek_mcdole_and_milena_casado.mp3?d=3370&amp;amp;size=53925181&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>Jazz centennials: Eight legends born in 1926</title>
