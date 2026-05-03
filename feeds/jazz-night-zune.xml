@@ -6,13 +6,21 @@
     <atom:link href="https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml" rel="self" type="application/rss+xml"/>
     <description>Scraped archive of NPR's Jazz Night In America radio episodes, with direct MP3 enclosures, formatted for Zune.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2026 17:15:46 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 06:53:20 GMT</lastBuildDate>
     <image>
       <url>https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png</url>
       <title>Jazz Night In America: The Radio Program (Full Archive)</title>
       <link>https://www.npr.org/series/347174538/jazz-night-radio</link>
     </image>
     <itunes:image href="https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png"/>
+    <item>
+      <title>On a tiny Croatian island, a jazz festival is giving musicians room to breathe</title>
+      <link>https://www.npr.org/2026/04/30/nx-s1-5785259/jazz-night-croatia-ponta-lupud-festival</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/04/20260430_specials_on_a_tiny_croatian_island_a_jazz_festival_is_giving_musicians_room_to_breathe.mp3?d=3385&amp;amp;size=54169688&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <description>What happens when musicians aren&amp;apos;t rushing from gig to gig? At the Ponta Lopud Jazz Festival in Croatia, they stay, connect and play. On a tiny Croatian island, a jazz festival is giving musicians room to breathe Listen· 56:2556-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/04/20260430_specials_on_a_tiny_croatian_island_a_jazz_festival_is_giving_musicians_room_to_breathe.mp3?d=3385&amp;amp;size=54169688&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
     <item>
       <title>On a tiny Croatian island, a jazz festival is giving musicians room to breathe</title>
       <link>https://www.npr.org/2026/04/30/nx-s1-5785259/jazz-night-croatia-ponta-lupud-festival</link>
