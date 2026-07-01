@@ -6,7 +6,7 @@
     <atom:link href="https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml" rel="self" type="application/rss+xml"/>
     <description>Scraped archive of NPR's Jazz Night In America radio episodes, with direct MP3 enclosures, formatted for Zune.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jun 2026 07:20:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 07:32:31 GMT</lastBuildDate>
     <image>
       <url>https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png</url>
       <title>Jazz Night In America: The Radio Program (Full Archive)</title>
@@ -46,12 +46,12 @@
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260624_specials_working_headline_keyon_harrold_celebrates_100_years_of_miles_davis_at_carnegie_hall.mp3?d=3368&amp;amp;size=53893417&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
-      <title>The Montreal International Jazz Festival, through the years</title>
-      <link>https://www.npr.org/2026/06/10/nx-s1-5850363/montreal-jazz-fest-at-46</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
-      <description>From Miles Davis to Diana Krall, we revisit iconic performances and unforgettable moments from 46 years of the Montreal International Jazz Festival. in progress: The Montreal International Jazz Festival, through the years Listen· 56:2156-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+      <title>Keyon Harrold celebrates 100 years of Miles Davis at Carnegie Hall</title>
+      <link>https://www.npr.org/2026/06/26/nx-s1-5869532/jazz-night-in-america-keyon-harrold-miles-davis-carnegie-hall</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260624_specials_working_headline_keyon_harrold_celebrates_100_years_of_miles_davis_at_carnegie_hall.mp3?d=3368&amp;amp;size=53893417&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+      <description>To mark the occasion of Miles Davis&amp;apos; centennial, trumpeter Keyon Harrold put on a concert at Carnegie Hall and shared a candid conversation about the legend with Christian McBride. Working Headline:Keyon Harrold celebrates 100 years of Miles Davis at Carnegie Hall Listen· 56:0856-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260624_specials_working_headline_keyon_harrold_celebrates_100_years_of_miles_davis_at_carnegie_hall.mp3?d=3368&amp;amp;size=53893417&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>The Montreal International Jazz Festival, through the years</title>
@@ -156,6 +156,30 @@
       <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
       <description>From Miles Davis to Diana Krall, we revisit iconic performances and unforgettable moments from 46 years of the Montreal International Jazz Festival. in progress: The Montreal International Jazz Festival, through the years Listen· 56:2156-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>The Montreal International Jazz Festival, through the years</title>
+      <link>https://www.npr.org/2026/06/10/nx-s1-5850363/montreal-jazz-fest-at-46</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
+      <description>From Miles Davis to Diana Krall, we revisit iconic performances and unforgettable moments from 46 years of the Montreal International Jazz Festival. in progress: The Montreal International Jazz Festival, through the years Listen· 56:2156-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>The Montreal International Jazz Festival, through the years</title>
+      <link>https://www.npr.org/2026/06/10/nx-s1-5850363/montreal-jazz-fest-at-46</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
+      <description>From Miles Davis to Diana Krall, we revisit iconic performances and unforgettable moments from 46 years of the Montreal International Jazz Festival. in progress: The Montreal International Jazz Festival, through the years Listen· 56:2156-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>On a tiny Croatian island, a jazz festival is giving musicians room to breathe</title>
+      <link>https://www.npr.org/2026/04/30/nx-s1-5785259/jazz-night-croatia-ponta-lupud-festival</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/04/20260430_specials_on_a_tiny_croatian_island_a_jazz_festival_is_giving_musicians_room_to_breathe.mp3?d=3385&amp;amp;size=54169688&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <description>What happens when musicians aren&amp;apos;t rushing from gig to gig? At the Ponta Lopud Jazz Festival in Croatia, they stay, connect and play. On a tiny Croatian island, a jazz festival is giving musicians room to breathe Listen· 56:2556-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/04/20260430_specials_on_a_tiny_croatian_island_a_jazz_festival_is_giving_musicians_room_to_breathe.mp3?d=3385&amp;amp;size=54169688&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>On a tiny Croatian island, a jazz festival is giving musicians room to breathe</title>
@@ -788,30 +812,6 @@
       <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
       <description>It’s summertime! Celebrate the season of sun and sounds with live music from some of our favorite festivals around the world. Jazz (Fest) in America Listen· 56:1256-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/07/20240726_specials_jazz_fest_in_america.mp3?size=53965723&amp;d=3372814&amp;e=nx-s1-5053042&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
-    </item>
-    <item>
-      <title>Pianist Omar Sosa plays 'child trickster' in divinely inspired musical journey</title>
-      <link>https://www.npr.org/2024/05/31/nx-s1-4984986/jazz-night-in-america-pianist-omar-sosa</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240529_specials_pianist_omar_sosa_plays_the_child_trickster_in_his_divinely-inspired_musical_journey.mp3?size=53651000&amp;d=3353141&amp;e=nx-s1-4984986&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
-      <description>What happened when the Cuban pianist Omar Sosa met with a Santería high priest? He found his life calling. JNIA_OmarSosa_Web.wav Listen· 55:5355-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240529_specials_pianist_omar_sosa_plays_the_child_trickster_in_his_divinely-inspired_musical_journey.mp3?size=53651000&amp;d=3353141&amp;e=nx-s1-4984986&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
-    </item>
-    <item>
-      <title>Youngbloods, Vibes: Joel Ross, Sasha Berliner and Simon Moullier</title>
-      <link>https://www.npr.org/2023/09/28/1202016106/youngbloods-vibes-joel-ross-sasha-berliner-and-simon-moullier</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240517_specials_172e0483-c1e4-45ca-a00c-7f8d5563e0de.mp3?d=3367&amp;size=53880042&amp;e=1202016106&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Fri, 17 May 2024 00:00:00 GMT</pubDate>
-      <description>Youngbloods 2023: Joel Ross, Simon Moullier, Sasha Berliner Youngbloods, Vibes: Joel Ross, Sasha Berliner and Simon Moullier Listen· 56:0756-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/05/20240517_specials_172e0483-c1e4-45ca-a00c-7f8d5563e0de.mp3?d=3367&amp;size=53880042&amp;e=1202016106&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
-    </item>
-    <item>
-      <title>McLean's Scene: How Jackie McLean made Hartford a destination for jazz</title>
-      <link>https://www.npr.org/2024/02/29/1234191474/how-jackie-mclean-made-hartford-a-destination-for-jazz</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/02/20240229_specials_b5dad8c2-a7e6-4b80-8812-0b728f591def.mp3?d=3390&amp;size=54251982&amp;e=1234191474&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
-      <description>At a time when jazz was not widely seen in higher education, the alto saxophonist brought the wisdom learned on the bandstand to the classroom. McLean's Scene: How Jackie McLean made Hartford a destination for jazz Listen· 56:3056-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2024/02/20240229_specials_b5dad8c2-a7e6-4b80-8812-0b728f591def.mp3?d=3390&amp;size=54251982&amp;e=1234191474&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
   </channel>
 </rss>
