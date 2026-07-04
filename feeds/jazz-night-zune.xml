@@ -6,7 +6,7 @@
     <atom:link href="https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml" rel="self" type="application/rss+xml"/>
     <description>Scraped archive of NPR's Jazz Night In America radio episodes, with direct MP3 enclosures, formatted for Zune.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2026 07:07:17 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 07:02:08 GMT</lastBuildDate>
     <image>
       <url>https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png</url>
       <title>Jazz Night In America: The Radio Program (Full Archive)</title>
@@ -70,12 +70,12 @@
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260624_specials_working_headline_keyon_harrold_celebrates_100_years_of_miles_davis_at_carnegie_hall.mp3?d=3368&amp;amp;size=53893417&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
-      <title>The Montreal International Jazz Festival, through the years</title>
-      <link>https://www.npr.org/2026/06/10/nx-s1-5850363/montreal-jazz-fest-at-46</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
-      <description>From Miles Davis to Diana Krall, we revisit iconic performances and unforgettable moments from 46 years of the Montreal International Jazz Festival. in progress: The Montreal International Jazz Festival, through the years Listen· 56:2156-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+      <title>Keyon Harrold celebrates 100 years of Miles Davis at Carnegie Hall</title>
+      <link>https://www.npr.org/2026/06/26/nx-s1-5869532/jazz-night-in-america-keyon-harrold-miles-davis-carnegie-hall</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260624_specials_working_headline_keyon_harrold_celebrates_100_years_of_miles_davis_at_carnegie_hall.mp3?d=3368&amp;amp;size=53893417&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+      <description>To mark the occasion of Miles Davis&amp;apos; centennial, trumpeter Keyon Harrold put on a concert at Carnegie Hall and shared a candid conversation about the legend with Christian McBride. Working Headline:Keyon Harrold celebrates 100 years of Miles Davis at Carnegie Hall Listen· 56:0856-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260624_specials_working_headline_keyon_harrold_celebrates_100_years_of_miles_davis_at_carnegie_hall.mp3?d=3368&amp;amp;size=53893417&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>The Montreal International Jazz Festival, through the years</title>
@@ -204,6 +204,30 @@
       <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
       <description>From Miles Davis to Diana Krall, we revisit iconic performances and unforgettable moments from 46 years of the Montreal International Jazz Festival. in progress: The Montreal International Jazz Festival, through the years Listen· 56:2156-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>The Montreal International Jazz Festival, through the years</title>
+      <link>https://www.npr.org/2026/06/10/nx-s1-5850363/montreal-jazz-fest-at-46</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
+      <description>From Miles Davis to Diana Krall, we revisit iconic performances and unforgettable moments from 46 years of the Montreal International Jazz Festival. in progress: The Montreal International Jazz Festival, through the years Listen· 56:2156-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>The Montreal International Jazz Festival, through the years</title>
+      <link>https://www.npr.org/2026/06/10/nx-s1-5850363/montreal-jazz-fest-at-46</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
+      <description>From Miles Davis to Diana Krall, we revisit iconic performances and unforgettable moments from 46 years of the Montreal International Jazz Festival. in progress: The Montreal International Jazz Festival, through the years Listen· 56:2156-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/06/20260608_specials_in_progress_the_montreal_international_jazz_festival_through_the_years.mp3?d=3381&amp;amp;size=54112009&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>On a tiny Croatian island, a jazz festival is giving musicians room to breathe</title>
+      <link>https://www.npr.org/2026/04/30/nx-s1-5785259/jazz-night-croatia-ponta-lupud-festival</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/04/20260430_specials_on_a_tiny_croatian_island_a_jazz_festival_is_giving_musicians_room_to_breathe.mp3?d=3385&amp;amp;size=54169688&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <description>What happens when musicians aren&amp;apos;t rushing from gig to gig? At the Ponta Lopud Jazz Festival in Croatia, they stay, connect and play. On a tiny Croatian island, a jazz festival is giving musicians room to breathe Listen· 56:2556-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/04/20260430_specials_on_a_tiny_croatian_island_a_jazz_festival_is_giving_musicians_room_to_breathe.mp3?d=3385&amp;amp;size=54169688&amp;amp;sc=siteplayer&amp;amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>On a tiny Croatian island, a jazz festival is giving musicians room to breathe</title>
@@ -788,30 +812,6 @@
       <pubDate>Thu, 14 Aug 2025 00:00:00 GMT</pubDate>
       <description>Among the last beboppers, one of the first singers on Blue Note and a pioneer of voice and bass, Sheila Jordan left an indelible mark on jazz. In this conversation from 2023, she joined Christian McBride to reflect on her remarkable life and music. JNIA Shelia Jordan update Listen· 57:5557-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/08/20250814_specials_jnia_shelia_jordan_update.mp3?d=3475&amp;size=55603705&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
-    </item>
-    <item>
-      <title>How pianist Fred Hersch's daring collaborations shaped his career</title>
-      <link>https://www.npr.org/2025/07/17/nx-s1-5464879/jazz-night-fred-hersch</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/07/20250717_specials_how_pianist_fred_hersch_s_daring_collaborations_shaped_his_career.mp3?d=3540&amp;size=56641080&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
-      <description>As he nears 70, pianist Fred Hersch looks back on a fearless life in jazz, sharing personal favorites, stories behind bold collaborations and music from his new album. How pianist Fred Hersch’s daring collaborations shaped his career Listen· 59:0059-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/07/20250717_specials_how_pianist_fred_hersch_s_daring_collaborations_shaped_his_career.mp3?d=3540&amp;size=56641080&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
-    </item>
-    <item>
-      <title>Jazz House Kids is rewriting the rules of jazz education</title>
-      <link>https://www.npr.org/2025/06/18/nx-s1-5437707/jazz-house-kids-is-rewriting-the-rules-of-jazz-education</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/06/20250618_specials_jazz_house_kids_tbd.mp3?size=53875444&amp;d=3367172&amp;e=nx-s1-5437707&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Wed, 18 Jun 2025 00:00:00 GMT</pubDate>
-      <description>Jazz House Kids trains the next generation of jazz stars — alums include Isaiah J. Thompson and Immanuel Wilkins — and gives every young musician a place to belong. Jazz House Kids TBD Listen· 56:0756-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/06/20250618_specials_jazz_house_kids_tbd.mp3?size=53875444&amp;d=3367172&amp;e=nx-s1-5437707&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
-    </item>
-    <item>
-      <title>10 tracks, 10 bands: A wild ride through Hiromi's music</title>
-      <link>https://www.npr.org/2025/05/15/nx-s1-5399167/jazz-night-hiromi-in-10-tracks</link>
-      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250515_specials_jazz_night_hiromi.mp3?size=58711650&amp;d=3669426&amp;e=nx-s1-5399167&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
-      <pubDate>Thu, 15 May 2025 00:00:00 GMT</pubDate>
-      <description>Pianist Hiromi picks a track from 10 different bands she's led or joined, tracing the bold ideas and unexpected turns that have shaped her ever-evolving sound. Jazz Night Hiromi Listen· 1:01:091-Hour, 1-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
-      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2025/05/20250515_specials_jazz_night_hiromi.mp3?size=58711650&amp;d=3669426&amp;e=nx-s1-5399167&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
     </item>
   </channel>
 </rss>
