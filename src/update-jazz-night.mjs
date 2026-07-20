@@ -24,13 +24,37 @@ const FEED_DESCRIPTION =
   "Scraped archive of NPR's Jazz Night In America radio episodes, with direct MP3 enclosures, formatted for Zune.";
 const FEED_LANGUAGE = "en-us";
 
-function escapeXml(str = "") {
+function unescapeXml(str = "") {
   return String(str)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&amp;/g, "&");
+}
+
+/** Undo accumulated XML entity escaping (e.g. &amp;amp; from double-escape bugs). */
+function fullyUnescapeXml(str = "") {
+  let s = String(str);
+  for (let i = 0; i < 5 && /&(?:amp|lt|gt|quot|apos);/i.test(s); i++) {
+    s = unescapeXml(s);
+  }
+  return s;
+}
+
+/**
+ * Stable key for episode identity. Strips query params so NPR tracking/
+ * size params don't create false "new" episodes, and normalizes residual
+ * HTML entities from previously double-escaped feed entries.
+ */
+function normalizeAudioUrl(url = "") {
+  let s = fullyUnescapeXml(url).trim();
+  try {
+    const u = new URL(s);
+    return `${u.origin}${u.pathname}`;
+  } catch {
+    return s.split("?")[0];
+  }
 }
 
 function sanitizeDescription(desc = "") {
@@ -95,15 +119,62 @@ async function loadExistingFeed() {
 function extractExistingAudioUrls(feedData) {
   const items = feedData?.rss?.channel?.[0]?.item || [];
   const audioUrls = new Set();
-  
-  items.forEach(item => {
+
+  items.forEach((item) => {
     const enclosure = item?.enclosure?.[0];
     if (enclosure?.$.url) {
-      audioUrls.add(enclosure.$.url);
+      audioUrls.add(normalizeAudioUrl(enclosure.$.url));
+    }
+    const guid = item?.guid?.[0]?._ ?? item?.guid?.[0];
+    if (typeof guid === "string" && guid) {
+      audioUrls.add(normalizeAudioUrl(guid));
     }
   });
-  
+
   return audioUrls;
+}
+
+/** Fix fields that were pre-escaped before xml2js wrote them (double-escape). */
+function repairItemXmlEntities(item) {
+  if (item.title?.[0]) item.title[0] = fullyUnescapeXml(item.title[0]);
+  if (item.link?.[0]) item.link[0] = fullyUnescapeXml(item.link[0]);
+  if (item.description?.[0]) {
+    item.description[0] = fullyUnescapeXml(item.description[0]);
+  }
+  if (item.pubDate?.[0]) item.pubDate[0] = fullyUnescapeXml(item.pubDate[0]);
+
+  const guidNode = item.guid?.[0];
+  if (guidNode && typeof guidNode._ === "string") {
+    guidNode._ = fullyUnescapeXml(guidNode._);
+  } else if (typeof guidNode === "string") {
+    item.guid[0] = fullyUnescapeXml(guidNode);
+  }
+
+  const enclosure = item.enclosure?.[0];
+  if (enclosure?.$.url) {
+    enclosure.$.url = fullyUnescapeXml(enclosure.$.url);
+  }
+
+  return item;
+}
+
+function itemAudioKey(item) {
+  const enclosureUrl = item?.enclosure?.[0]?.$.url;
+  if (enclosureUrl) return normalizeAudioUrl(enclosureUrl);
+  const guid = item?.guid?.[0]?._ ?? item?.guid?.[0];
+  if (typeof guid === "string") return normalizeAudioUrl(guid);
+  return "";
+}
+
+/** Keep first occurrence of each episode (caller should sort newest-first). */
+function dedupeItemsByAudioUrl(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = itemAudioKey(item);
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 async function scrapeRecentEpisodes(page) {
@@ -258,13 +329,14 @@ async function scrapeRecentEpisodes(page) {
 }
 
 function createItemXml(episode) {
-  const title = escapeXml(episode.title || "Untitled episode");
-  const link = escapeXml(episode.link || FEED_LINK);
-  const sanitizedDesc = sanitizeDescription(episode.description || "");
-  const desc = escapeXml(sanitizedDesc);
-  const pubDate = escapeXml(episode.pubDate);
-  const audioUrl = escapeXml(episode.audioUrl);
-  const guid = escapeXml(episode.guid || episode.audioUrl);
+  // Do NOT pre-escape: xml2js Builder escapes once on write.
+  // Pre-escaping caused & → &amp;amp; and broke URL dedupe on the next run.
+  const title = episode.title || "Untitled episode";
+  const link = episode.link || FEED_LINK;
+  const desc = sanitizeDescription(episode.description || "");
+  const pubDate = episode.pubDate;
+  const audioUrl = episode.audioUrl;
+  const guid = episode.guid || episode.audioUrl;
 
   return {
     title: [title],
@@ -272,19 +344,33 @@ function createItemXml(episode) {
     guid: [{ _: guid, $: { isPermaLink: "false" } }],
     pubDate: [pubDate],
     description: [desc],
-    enclosure: [{ $: { url: audioUrl, length: "0", type: "audio/mpeg" } }]
+    enclosure: [{ $: { url: audioUrl, length: "0", type: "audio/mpeg" } }],
   };
 }
 
 async function updateFeedWithNewEpisodes(existingFeed, newEpisodes, existingUrls) {
-  const newEpisodesFiltered = newEpisodes.filter(ep => !existingUrls.has(ep.audioUrl));
-  
-  if (newEpisodesFiltered.length === 0) {
+  const existingItemsRaw = existingFeed.rss.channel[0].item || [];
+  const existingItems = existingItemsRaw.map(repairItemXmlEntities);
+  const beforeDedupe = existingItems.length;
+  const dedupedExisting = dedupeItemsByAudioUrl(existingItems);
+  const removedDupes = beforeDedupe - dedupedExisting.length;
+
+  if (removedDupes > 0) {
+    console.log(`Removed ${removedDupes} duplicate episode(s) from existing feed.`);
+  }
+
+  const newEpisodesFiltered = newEpisodes.filter(
+    (ep) => !existingUrls.has(normalizeAudioUrl(ep.audioUrl))
+  );
+
+  if (newEpisodesFiltered.length === 0 && removedDupes === 0) {
     console.log("No new episodes found. Feed is up to date.");
     return false;
   }
 
-  console.log(`Found ${newEpisodesFiltered.length} new episodes to add.`);
+  if (newEpisodesFiltered.length > 0) {
+    console.log(`Found ${newEpisodesFiltered.length} new episodes to add.`);
+  }
 
   // Convert new episodes to proper format
   const processedNewEpisodes = newEpisodesFiltered.map((ep) => {
@@ -297,26 +383,18 @@ async function updateFeedWithNewEpisodes(existingFeed, newEpisodes, existingUrls
     };
   });
 
-  // Get existing items
-  const existingItems = existingFeed.rss.channel[0].item || [];
-
-  // Create XML objects for new episodes
   const newItemsXml = processedNewEpisodes.map(createItemXml);
+  const allItems = [...newItemsXml, ...dedupedExisting];
 
-  // Combine and sort all episodes
-  const allItems = [...newItemsXml, ...existingItems];
-  
-  // Sort by pubDate (newest first) and limit to MAX_EPISODES
   allItems.sort((a, b) => {
     const dateA = new Date(a.pubDate[0]);
     const dateB = new Date(b.pubDate[0]);
     return dateB - dateA;
   });
 
-  // Limit to MAX_EPISODES
-  const limitedItems = allItems.slice(0, MAX_EPISODES);
+  // Dedupe again after merge (normalized URL), then cap
+  const limitedItems = dedupeItemsByAudioUrl(allItems).slice(0, MAX_EPISODES);
 
-  // Update the feed
   existingFeed.rss.channel[0].item = limitedItems;
   existingFeed.rss.channel[0].lastBuildDate = [new Date().toUTCString()];
 
