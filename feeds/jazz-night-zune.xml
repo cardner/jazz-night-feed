@@ -6,13 +6,21 @@
     <atom:link href="https://cardner.github.io/jazz-night-feed/jazz-night-zune.xml" rel="self" type="application/rss+xml"/>
     <description>Scraped archive of NPR's Jazz Night In America radio episodes, with direct MP3 enclosures, formatted for Zune.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2026 17:33:52 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 06:52:33 GMT</lastBuildDate>
     <image>
       <url>https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png</url>
       <title>Jazz Night In America: The Radio Program (Full Archive)</title>
       <link>https://www.npr.org/series/347174538/jazz-night-radio</link>
     </image>
     <itunes:image href="https://media.npr.org/branding/series/347174538/jazz-night-radio/branding_main-815862d2af19f7a932c6377c6a381a7091339d6a-s1000-c100.png"/>
+    <item>
+      <title>Jazz singer-songwriter Nicole Zuraitis makes an introspective epic</title>
+      <link>https://www.npr.org/2026/07/23/nx-s1-5904625/jazz-singer-songwriter-nicole-zuraitis-makes-an-introspective-epic</link>
+      <guid isPermaLink="false">https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/07/20260723_specials_jazz_singer-songwriter_nicole_zuraitis_makes_an_introspective_epic.mp3?d=3580&amp;size=57291843&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer</guid>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The 2024 Grammy winner goes big on her new five-part, 20-track album. Jazz singer-songwriter Nicole Zuraitis makes an introspective epic Listen· 59:4059-Minute ListenPlaylist Toggle more options Download Embed Embed</description>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/specials/2026/07/20260723_specials_jazz_singer-songwriter_nicole_zuraitis_makes_an_introspective_epic.mp3?d=3580&amp;size=57291843&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="0" type="audio/mpeg"/>
+    </item>
     <item>
       <title>Keyon Harrold celebrates 100 years of Miles Davis at Carnegie Hall</title>
       <link>https://www.npr.org/2026/06/26/nx-s1-5869532/jazz-night-in-america-keyon-harrold-miles-davis-carnegie-hall</link>
